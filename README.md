@@ -79,8 +79,8 @@ This command starts a Docker container based on the image you built and maps por
 ###  Explanation:
 - There are two rake tasks for importing Movies, actors, and Reviews
 ```bash
-  rake csv_import:movies["tmp/movies"]
-  rake csv_import:reviews["tmp/reviews"]
+  rake csv_import:movies["tmp/movies.csv"]
+  rake csv_import:reviews["tmp/reviews.csv"]
 ```
 we are using csv_smart gem for importing the data in chunk through sidekiq
 
